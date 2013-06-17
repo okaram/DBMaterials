@@ -1,0 +1,14 @@
+digraph searchTree1 {
+	node [shape=record];
+	r [label="<f0>|<f1> 15 |<f2>"];
+	c1[label="<f0>|<f1> 13 |<f2>"];
+	c2[label="<f0>|<f1> 11 |<f2>"];
+	c3[label="<f0>|<f1> 8 |<f2>"];
+	c4[label="<f0>|<f1> 5 |<f2>"];
+	
+	r:f0->c1:f1;
+	c1:f0->c2:f1;
+	c2:f0->c3:f1;
+	c3:f0->c4:f1;
+	
+}

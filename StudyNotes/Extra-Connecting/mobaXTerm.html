@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd"
+    >
+<html lang="en">
+<head>
+    <title>Connecting using MobaXTerm</title>
+</head>
+<body>
+<p>An easy way to connect to the server, that works on all versions of Windows, and does not make changes to your machine, is <a href="http://mobaxterm.mobatek.net/en/">Moba XTerm</a>. This includes a nice terminal emulator, several commands (including ssh and scp) and an XWindows server.</p>
+
+<p>To log on to our server:</p>
+<ul>
+    <li>Download Mobaxterm, from <a href="http://okaram.spsu.edu/~curri/MobaXterm_3.0.exe">okaram</a>(3.0, current as of May 2011) or <a href="http://mobaxterm.mobatek.net/en/">Mobatek's site</a>. You may want to save this on your local machine so you do not have to download it again.
+    </li>
+    <li>Run the downloaded executable</li>
+    <li>Type:   ssh -X me@okaram.spsu.edu     Replace me with your username (usually same as spsu email). Notice that the X is capitalized, -X.</li>
+    <li>You will be asked for your password; after typing it correctly, you should be logged on to the server (the prompt will change, and it should mention okaram; also, moba will display a list of files on the right hand side)</li>
+    <li>After you've logged on to the server, you can run commands; these commands will be executed ON THE SERVER, not on your local machine. Some of the most useful commands are:
+        <ul>
+            <li>bluefish -- a text editor (remember, it is running on the server, so files will be saved to the server; anything saved on your public_html folder should be visible through the web)</li>
+            <li>g++ -- C++ compiler. </li>
+            <li>psql -- client for postgresql DBMS</li>
+            <li>sqlplus -- client for oracle DBMS</li>
+        </ul>
+    </li>
+</ul>
+    
+</body>
+</html>

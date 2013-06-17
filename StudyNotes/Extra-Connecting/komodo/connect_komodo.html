@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd"
+    >
+<html lang="en">
+<head>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <title>Connecting with a slow network</title>
+</head>
+<body>
+<h1> Connecting with a slow network </h1>
+
+<p>In order to practice SQL in the server and to complete the final project, there are three kinds of things you need to do in the server:</p>
+<ol>
+    <li> Execute programs <em>on</em> the server, like <span class="code">psql</span></li>
+    <li> Create and change text (html,php,sql) files on the server</li>
+    <li> (maybe) Transfer files created elsewhere (images etc) into the server</li>
+</ol>
+
+<p>This document will show you how to do so in a MS Windows machine (XP, Vista or 7).</p>
+
+<h2>Execute programs on the server</h2>
+
+<p>In order to connect to the server to execute programs or commands on it, you need an SSH client with a terminal emulator; a simple one is <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/">putty</a>, which you can download from <a href="http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe">here</a>.</p>
+
+<p>After downloading putty, run it (it's just a plain executable) and configure it as in the image below, making sure:</p>
+<ul>
+    <li>The hostname is <span class="code"> okaram.spsu.edu </span></li>
+    <li> The port is 22 (that is the default)</li>
+    <li>The connection type is set to SSH (default) </li>
+</ul>
+<div> <img src="putty_open.png" alt="screenshot of putty dialog for opening connection"></div>
+
+<p>Later, you may want to save your session (or session settings) and give it a name. If you don't like the font etc, they can be changed in the appearance tab. Also, if you write <span class="code">myusername@okaram.spsu.edu</span> (replacing with your actual username) as the server, it won't ask you your username again</p>
+<p>The first time you log in with putty, it will ask you whether you're connecting to the right server; unless you're paranoid, just say yes :) (the risk is a man-in-the-middle attack, where some server could be maskerading as okaram.spsu.edu, and messing with your DNS server; possible, but not very likely :). The dialog is illustrated below</p>
+<div><img src="putty_question.png" alt="screenshot of putty asking the security question"></div>
+    
+<p>After that, it will ask you for your username (same as your spsu email) and password (the initial one has been provided by email and is also listed on our WebCT site for the online section); the final result should be a screen like the one below, where you can start typing commands (like psql). Remember that the prompt changes between psql and bash, \q gets you out of psql, and exit logs you out from the server nicely, although chances are nothing bad will happen if you just close putty)</p>
+<div><img src="putty_login.png" alt="Screenshot showing a normal putty logon"></div>
+    
+<h2> Creating and changing text (html,php) files on the server</h2>
+<p>You could run a text editor on the server to create and edit files (vi, emacs or pico if you're only using putty, bluefish and emacs if you're also using an Xwindows server, like with XLiveCD), however, if the network connection is slow, it may be a painful experience. Here we describe how to connect using <a href="http://www.activestate.com/komodo_edit/">Komodo edit</a>, a free (no cost) editor that allows you to save files remotely using sftp (BTW, komodo edit is multuplatform, so you can also get it for Mac and Linux, although many basic text editors on Linux also support this feature). If you prefer, you may want to check <a href="http://www.youtube.com/watch?v=dKSUiVjlRPg">this Youtube video</a>, or you may keep reading for a reference.</p>
+
+<p>Once you've downloaded the program, run it and select (on the menus) File, then Open, then Remote File, and you get a dialog like the one below (but I've added the red circle and arrow to tell you where to click :)</p>
+<div><img src="komodo_open.png" alt="screenshot of Komodo's file/open/remote file dialog box"></div>
+<p> Then click on the icon at the top-right corner, at the end of the line that begins with server (see the red circle and arrow on the picture above :) and you get another dialog like the one below (Note: you could also get to this same dialog by going to edit / preferences on the menus)</p>
+<div><img src="komodo_remote_server.png" alt="screenshot of komodo's remote servers preferences dialog"></div>
+<p>Make sure:</p>
+<ul>
+    <li>The server type is SFTP</li>
+    <li>The name is whichever name you want to give to this connection setting (I call mine ok)</li>
+    <li>The hostname is okaram.spsu.edu</li>
+    <li>Port is blank</li>
+    <li>Username and password are your <em>Linux</em> username and password</li>
+    <li>All other values are as shown </li>
+</ul>
+<p>After you click on OK, you get back to the same file open dialog, but now you can select your server from the server drop down, as shown below (and this setting should be stored so you can always just pick that server). Notice it may take a little for the dialog to reflect the information on the server.</p>
+<div><img src="komodo_open_with_server.png" alt="screenshot of komodo's remote servers preferences dialog"></div>
+
+<p>You can use a similar procedure to save a previously open file remotely.</p>
+    
+<h2> Transfer files to the server</h2>
+<p>You can use any SFTP client; for our MS Windows machines in the lab, we use WinSCP. More info coming :)</p>
+</body>
+</html>

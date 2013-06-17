@@ -1,0 +1,8 @@
+digraph searchTree1 {
+	node [shape=record];
+	r [label="<f0>|<f1> 7 |<f2>"];
+	c1[label="<fo>|<f1> 5 |<f2>"];
+	c2[label="<fo>|<f1> 34|<f2>"];
+	r:f0->c1:f1;
+	r:f2->c2:f1;
+}

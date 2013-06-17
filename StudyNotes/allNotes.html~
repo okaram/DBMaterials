@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"
+			"http://www.w3.org/TR/REC-html40/strict.dtd">
+
+<!--#set var="title" value="All Study Notes" -->
+
+<html>
+<head>
+    <title><!--#echo var="title" --></title>
+
+</head>
+
+<body>
+
+<center> <h1><!--#echo var="title" --></h1></center>
+
+<h2>Chapter 1 -Introduction</h2>
+<ul>
+	<li><a href="Ch1-Intro/Ch1-Introduction.pdf">Intro to Databases notes</a></li>
+	<li>Slides -  <a href="Ch1-Intro/Ch1-Slides.pdf">pdf</a> -  <a href="Ch1-Intro/Ch1-Slides.ppt">ppt</a></li>
+	<li><a href="Ch1-Intro/NarratedSlides/slideNarrator.swf ">Narrated Slides (swf)</a> and <a href="Ch1-Intro/Ch1-SlideNarration.pdf">Annotated slides</a></a></li>	
+</ul>
+
+<center><h2>Chapters 2 and 3 - ER Modeling</h2></center>
+
+Chapter 2, basic ER modeling
+<ul>
+	<li><a href="Ch2-BasicER/Ch2-ERModelingIntro-Notes.pdf">Intro to ER Modeling notes</a></li>
+	<li>Slides <a href="Ch2-BasicER/Ch2-Slides.pdf">pdf</a> <a href="Ch2-BasicER/Ch2-Slides.ppt">ppt</a></li>
+	<li><a href="Ch2-BasicER/Ch2-AnnotatedSlides.pdf">Annotated slides</a> (narrated slides hopefully coming soon)</li>
+</ul>
+
+
+Chapter 3, Advanced ER modeling
+<ul>
+	<li><a href="Ch3-AdvancedER/AdvancedERModeling.pdf">Advanced ER Modeling notes (in revision)</a> pdf</li>
+	<li>Slides (used in face-to-face class) <a href="fall-09/ER/AdvancedERSlides.pdf">pdf</a> and <a href="fall-09/ER/AdvancedERSlides.ppt">ppt</a></li>	
+	<li> Slides (new version) <a href="Ch3-AdvancedER/Ch3-Slides.pdf">pdf</a> <a href="Ch3-AdvancedER/Ch3-Slides.ppt">ppt</a> </li>
+</ul>
+
+<h2>Chapter 4, Introduction to the Relational Model</h2>
+
+
+<ul>
+	<li> <a href="Ch4-IntroRelationalModel/Ch4-IntroRelationalModel.pdf">Intro relational model</a>(pdf, in revision) also available as <a href="Ch4-IntroRelationalModel/Ch4-IntroRelationalModel.odt">odt</a> and <a href="Ch4-IntroRelationalModel/Ch4-IntroRelationalModel.doc">doc</a></li>
+	<li><a href="Ch4-IntroRelationalModel/Ch4-Slides.pdf">Slides (pdf)</a>also 
+<a href="Ch4-IntroRelationalModel/Ch4-Slides.pdf">Keynote</a> and <a href="Ch4-IntroRelationalModel/Ch4-Slides.pdf">ppt</a></li>
+	<li><a href="Ch4-IntroRelationalModel/Ch4-Slides-Narration/Ch4-AnnotatedSlides.pdf">Annotated slides (pdf)</a> also <a href="Ch4-IntroRelationalModel/Ch4-Slides-Narration/Ch4-AnnotatedSlides.odt">odt</a> and <a href="Ch4-IntroRelationalModel/Ch4-Slides-Narration/Ch4-AnnotatedSlides.doc">doc</a></li>
+</ul>
+
+<h2>Chapter 5 - A Brief overview of SQL</h2>
+
+<ul>
+	<li><a href="Ch5-BasicSQLIntro/SQL_Brief_Intro.pdf">Brief intro to SQL Notes</a> (pdf, in revision)</li>
+	<li> Slides - <a href="Ch5-BasicSQLIntro/Ch5-Slides.pdf">pdf</a> <a href="Ch5-BasicSQLIntro/Ch5-Slides.ppt">ppt</a> </li>
+	<li><a href="Ch5-BasicSQLIntro/NarratedSlides/Ch5-AnnotatedSlides.pdf">Annotated slides</a> (pdf)</li>
+	<li><a href="Ch5-BasicSQLIntro/NarratedSlides/slideNarrator.swf">Narrated slides</a> (flash)</li>
+	
+</ul>
+
+<h2></h2>
+<h2></h2>
+<h2></h2>
+
+<h2>Exercise Solutions</h2>
+<ul>
+<li><a href="ChN-Solutions/SolutionsToExercises.pdf">Solutions</a> to selected exercises (for now, Ch2 only :)</li>
+</ul>
+</body>
+</html>
